@@ -373,6 +373,10 @@ def process_image():
 def serve_output(filename):
     return send_from_directory(OUTPUT_DIR, filename)
 
+@app.route("/", methods=["GET", "HEAD"])
+def root():
+    return "Flask Component Labeling API is running.", 200
+
 # ------------------- RUN -------------------
 if __name__ == "__main__":
     print("✅ Flask server running on http://localhost:8000")
