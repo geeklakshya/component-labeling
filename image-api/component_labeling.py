@@ -383,7 +383,7 @@ if __name__ == "__main__":
     print("🔄 CORS is enabled for all origins")
     print("📂 Upload directory:", os.path.abspath(UPLOAD_DIR))
     print("📂 Output directory:", os.path.abspath(OUTPUT_DIR))
-    port = int(os.environ.get("PORT", 8000))
+    port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port, debug=True)
 
 
