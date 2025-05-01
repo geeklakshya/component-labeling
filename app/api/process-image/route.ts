@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid image file" }, { status: 400 })
     }
 
-    const flaskServerUrl = "http://localhost:8000"
+    const flaskServerUrl = "https://image-component-labeling.onrender.com/"
 
     const uploadForm = new FormData()
     uploadForm.append("image", image)
